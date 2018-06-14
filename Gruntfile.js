@@ -8,6 +8,16 @@ module.exports = function(grunt) {
         },
 
         copy: {
+            css: {
+                files: [{
+                    expand: true,
+                    src: [
+                        "build/css/**"
+                    ],
+                    dest: "css"
+                }]
+            },
+
             build: {
                 files: [{
                     expand: true,

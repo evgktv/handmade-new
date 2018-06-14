@@ -406,6 +406,10 @@
     var consistValue = document.querySelectorAll('.catalog-page__filter-consist__label');
 
     var filterConsist = [];
+    for ( var qq = 1; qq < consist.length; qq++) {
+        filterConsist[qq - 1] = consistValue[qq].textContent;
+    };
+
     var jj = 0;
 
     consist[0].onclick = function (evt) {
