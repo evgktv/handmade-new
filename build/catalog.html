@@ -1,0 +1,252 @@
+<!doctype HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>EvgKtv</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/favicon.png" type="image/png" rel="shortcut icon">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+<body>
+<header class="header">
+  <h1 class="visually-hidden">Handmade "Studio presents"</h1>
+</header>
+
+<nav id="menuID" class="main-nav main-nav--closed main-nav--catalog main-nav--nojs">
+  <div class="main__wrapper main-nav__wrapper">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item--logo">
+        <a href="index.html">
+          <img class="main-nav__logo" src="img/logo.jpg" alt="logo">
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="index.html#about">О студии</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="index.html#skills">Спец. предложения</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#portfolio">Каталог</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#contact">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <section class="catalog-page">
+    <div class="main__wrapper">
+      <h2 class="section-title">Каталог студии "Подарки"</h2>
+
+      <div class="catalog-page__wrapper">
+
+        <div class="catalog-page__filter">
+          <p class="catalog-page__filter-title">Фильтры:</p>
+
+          <div class="catalog-page__filter-box">
+            <p class="catalog-page__filter-box-name">Цена:</p>
+
+            <div class="price">
+
+              <div class="price__controls">
+                <div class="price__scale">
+                  <div class="price__bar">
+                    <div class="price__toggle price__toggle--min"></div>
+                    <div class="price__toggle price__toggle--max"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price__box">
+                <label>
+                  <input class="price__box-min" name="price-min" value="" id="price-min">
+                </label>
+                <span>-</span>
+                <label>
+                  <input class="price__box-max" name="price-max" value="" id="price-max">
+                </label>
+              </div>
+            </div>
+          </div>
+
+
+
+          <form class="catalog-page__filter-box" action="#" method="post">
+            <p class="catalog-page__filter-box-name">Подарки:</p>
+            <div class="catalog-page__filter-area">
+
+              <div class="catalog-page__filter-consist">
+                <label>
+                  <input class="catalog-page__filter-consist__input" type="checkbox" name="all" id="filter-consist-all" checked>
+                  <span class="catalog-page__filter-consist__checkbox-custom"></span>
+                  <span class="catalog-page__filter-consist__label">все товары</span>
+                </label>
+              </div>
+
+              <div class="catalog-page__filter-consist">
+                <label>
+                  <input class="catalog-page__filter-consist__input" type="checkbox" name="candy" id="filter-consist-candy" >
+                  <span class="catalog-page__filter-consist__checkbox-custom"></span>
+                  <span class="catalog-page__filter-consist__label">из конфет</span>
+                </label>
+              </div>
+
+              <div class="catalog-page__filter-consist">
+                <label>
+                  <input class="catalog-page__filter-consist__input" type="checkbox" name="textile" id="filter-consist-textile">
+                  <span class="catalog-page__filter-consist__checkbox-custom"></span>
+                  <span class="catalog-page__filter-consist__label">из ткани</span>
+                </label>
+              </div>
+
+              <div class="catalog-page__filter-consist">
+                <label>
+                  <input class="catalog-page__filter-consist__input" type="checkbox" name="paper" id="filter-consist-paper">
+                  <span class="catalog-page__filter-consist__checkbox-custom"></span>
+                  <span class="catalog-page__filter-consist__label">из бумаги</span>
+                </label>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="catalog-page__catalog">
+
+          <div class="catalog-page__sort catalog-page__sort--nojs">
+            <p class="catalog-page__sort-title">Сортировать по цене:</p>
+            <svg id="price-sort-up" class="catalog-page__sort-arrow catalog-page__sort-arrow--up" role="button" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path d="M3,111.67,247.67,418.4c4,5.06,12.6,5.06,16.65,0L509,111.64a15.21,15.21,0,0,0,2.2-13.9,14.2,14.2,0,0,0-1-2.32,10.66,10.66,0,0,0-9.39-5.62H11.14a10.64,10.64,0,0,0-9.38,5.62,13.93,13.93,0,0,0-1,2.27A15.26,15.26,0,0,0,3,111.67Z"/></svg>
+            <svg id="price-sort-down" class="catalog-page__sort-arrow catalog-page__sort-arrow--down" role="button" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path d="M3,111.67,247.67,418.4c4,5.06,12.6,5.06,16.65,0L509,111.64a15.21,15.21,0,0,0,2.2-13.9,14.2,14.2,0,0,0-1-2.32,10.66,10.66,0,0,0-9.39-5.62H11.14a10.64,10.64,0,0,0-9.38,5.62,13.93,13.93,0,0,0-1,2.27A15.26,15.26,0,0,0,3,111.67Z"/></svg>
+          </div>
+
+          <div class="catalog-page__block">
+
+            <div class="catalog-page__list catalog-page__list--nojs">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="main__wrapper">
+
+    <div class="footer__social">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-item-link">
+            <svg  class="footer__social-icon" width="45px" height="45px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <path d="M100,0 C44.7714,0 0,44.7714 0,100 C0,155.2286 44.7714,200 100,200 C155.2286,200 200,155.2286 200,100 C200,44.7714 155.2286,0 100,0 Z M107,140 C106.866163,139.664992 109.393201,139.385996 111,138 C111.872912,136.713068 111.834953,134.311236 112,134 C111.834953,134.311236 111.671282,123.064991 117,121 C122.02001,119.775804 128.616634,132.27827 136,137 C140.895395,140.722213 144.913218,139.926211 145,140 L164,140 C163.609651,139.664992 173.389475,139.060089 169,131 C168.372373,130.729227 166.050909,125.660886 155,115 C143.126643,104.348573 144.697784,106.111925 159,87 C167.419434,75.7779268 170.857507,68.7689609 170,66 C168.759365,62.9065935 162.433883,63.6621041 162,64 L141,64 C141.38345,63.7929606 139.821676,63.5796399 139,64 C137.533242,64.9514102 136.807076,66.5355135 137,67 C136.807076,66.5355135 133.474009,75.4194296 129,83 C119.658615,98.9187728 115.910454,99.7626732 114,99 C110.812503,96.4636102 111.703819,89.5030365 112,85 C111.703819,69.105731 114.043523,62.663645 107,61 C104.859717,60.4430363 103.174203,60.0771322 97,60 C89.8103825,59.940844 83.454335,60.0405911 80,62 C77.459645,62.9821446 75.6119395,65.5987791 77,66 C78.1296107,65.9355492 81.2797809,66.6016824 83,69 C85.1078046,71.8186561 85.031885,78.419745 85,78 C85.031885,78.419745 86.2717407,96.6077991 82,99 C79.2999557,100.415968 75.407351,97.252699 67,83 C62.7692036,75.379432 59.536212,67.1883142 60,67 C59.536212,67.1883142 58.9135728,65.6580348 58,65 C56.4521018,63.8462907 54.5674225,63.5317415 55,64 L35,64 C34.5631025,63.6625979 31.5608277,63.7465436 30,65 C29.4759968,66.2189891 30.3791441,68.624772 30,69 C30.3791441,68.624772 46.0392858,105.324812 64,124 C80.0354883,140.778012 98.4982462,139.664992 98,140 L107,140 Z" id="VK" class="footer__social-icon-bg"></path>
+              </g>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-item-link">
+            <svg class="footer__social-icon" width="45px" height="45px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <path d="M83.0148642,198.563409 C35.8763434,190.497976 0,149.438784 0,100 C0,44.7714 44.7714,0 100,0 C155.2286,0 200,44.7714 200,100 C200,151.034119 161.77092,193.139119 112.387459,199.240302 L112.387459,127.016912 L136.884864,127.016912 L140.552554,98.5735974 L112.387459,98.5735974 L112.387459,80.413798 C112.387459,72.1787946 114.67394,66.5671009 126.483423,66.5671009 L141.545387,66.5600395 L141.545387,41.120644 C138.939025,40.7746355 129.999294,40 119.597853,40 C97.8819334,40 83.0148642,53.2549518 83.0148642,77.5977121 L83.0148642,98.5735974 L58.4546129,98.5735974 L58.4546129,127.016912 L83.0148642,127.016912 L83.0148642,198.563409 Z" id="Facebook" class="footer__social-icon-bg"></path>
+              </g>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-item-link">
+            <svg class="footer__social-icon" width="45px" height="45px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="#eeeeee" fill-rule="evenodd">
+                <path d="M100,0 C44.7714,0 0,44.7714 0,100 C0,155.2286 44.7714,200 100,200 C155.2286,200 200,155.2286 200,100 C200,44.7714 155.2286,0 100,0 Z M71.5697674,90.2840909 L71.5697674,108.636364 L96.1744186,108.636364 C94.0348837,119.431818 84.4069767,128.068182 71.5697674,128.068182 C56.5930233,128.068182 43.755814,115.113636 43.755814,100 C43.755814,84.8863636 56.5930233,71.9318182 71.5697674,71.9318182 C77.9883721,71.9318182 84.4069767,74.0909091 88.6860465,78.4090909 L102.593023,64.375 C94.0348837,57.8977273 84.4069767,52.5 71.5697674,52.5 C45.8953488,52.5 24.5,74.0909091 24.5,100 C24.5,125.909091 45.8953488,147.5 71.5697674,147.5 C98.3139535,147.5 116.5,128.068182 116.5,101.079545 C116.5,97.8409091 116.5,93.5227273 115.430233,90.2840909 C115.430233,90.2840909 71.5697674,90.2840909 71.5697674,90.2840909 Z M159.428571,91.597561 L159.428571,75.5 L147.642857,75.5 L147.642857,91.597561 L130.5,91.597561 L130.5,103.402439 L146.571429,103.402439 L146.571429,119.5 L158.357143,119.5 L158.357143,103.402439 L175.5,103.402439 L175.5,91.597561 L159.428571,91.597561 Z" id="Google+" class="footer__social-icon-bg"></path>
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="footer__copyright"><span class="footer__copyright-text">© 2017</span>
+      <a href="#" class="footer__copyright-link">Evgeny Kotlyarov</a>
+    </div>
+  </div>
+</footer>
+
+
+
+<template id="item-template" style="display: none">
+  <article class="item">
+    <label>
+      <div class="item__wrapper">
+
+        <div class="item__img-box">
+          <img class="item__img" width="150" alt="нет фото">
+        </div>
+
+        <div class="item__info">
+          <h3 class="item__title"></h3>
+          <div class="item__price-box">
+            <p class="item__info-name">Цена: <span class="item__price"></span> руб.</p>
+          </div>
+        </div>
+      </div>
+
+      <input type="radio" name="type" id="item">
+      <div class="item__radio-custom">
+        <div class="item__box-button">
+          <svg class="item__button item__button--prev" version="1.1" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="100" height="100"
+               viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+            <g>
+              <path class="item__button-color" d="M8,0C3.5,0,0,3.5,0,8s3.5,8,8,8s8-3.5,8-8S12.5,0,8,0z M13,10H7v2L2,8l5-4v2h6V10z"/></g>
+          </svg>
+          <svg class="item__button item__button--next" version="1.1" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="100" height="100"
+               viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+            <g>
+              <path class="item__button-color" d="M8,0C3.5,0,0,3.5,0,8s3.5,8,8,8s8-3.5,8-8S12.5,0,8,0z M13,10H7v2L2,8l5-4v2h6V10z"/></g>
+          </svg>
+        </div>
+        <div class="item__all-info">
+          <h3 class="item__title item__title--popup"></h3>
+          <div class="item__price-box item__price-box--popup">
+            <p class="item__info-name">Цена: <span class="item__price"></span> руб.</p>
+          </div>
+          <div class="item__all-info-text">
+            <h3 class="item__info-name">Общая информация:</h3>
+            <p class="item__info-text"></p>
+            <h3 class="item__info-name">Размер:</h3>
+            <span class="item__info-text item__info-text--size"></span>
+            <h3 class="item__info-name">Категории:</h3>
+            <div class="item__category-block">
+              <a class="item__category-link" href="#">для мужчин</a>
+              <a class="item__category-link" href="#">ткань</a>
+              <a class="item__category-link" href="#">23 февраля</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </label>
+  </article>
+</template>
+
+<script src="js/item.js"></script>
+<script src="js/catalog-list.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>

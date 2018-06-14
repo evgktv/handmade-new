@@ -1,0 +1,98 @@
+.price {
+  position: relative;
+  width: 100%;
+}
+
+.price__controls {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+
+  background: @input-bg;
+  border-radius: 3px;
+
+  border: 1px solid red;
+}
+
+.price__scale {
+  position: absolute;
+  width: 84%;
+  height: 2px;
+  top: 50%;
+  left: 8%;
+  right: 8%;
+  background: #e1e1e1;
+}
+
+.price__bar {
+  position: relative;
+  width: 100%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.price__toggle {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  top: -10px;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #CFCFCF;
+
+  &:hover {
+    background: red;
+  }
+
+  &:active {
+    background: red;
+    box-shadow: 0 4px 2px 0 #bebebe;
+    top: -9px;
+  }
+}
+
+.price__toggle--min {
+  left: 0;
+}
+
+.price__toggle--max {
+  right: 0;
+}
+
+.price__box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & label {
+    width: 35%;
+  }
+}
+
+.price__box input {
+  width: 100%;
+  height: 30px;
+
+  font-family: OpenSans, sans-serif;;
+  color: @txt-grey;
+  font-size: 14px;
+  line-height: 22px;
+
+  text-align: center;
+
+  border: none;
+  background: #f7f3ec;
+  border-radius: 3px;
+  outline: none;
+}
+
+.price__box  span {
+  padding: 0;
+}

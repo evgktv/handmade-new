@@ -1,0 +1,161 @@
+.catalog-page {
+  padding: 25px;
+
+  background-color: @catalog-bg;
+}
+
+.catalog-page__wrapper {
+  width: 100%;
+
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+  }
+}
+
+.catalog-page__filter {
+
+  position: fixed;
+
+  @media @tablet-widths {
+
+    width: 170px;
+    margin-right: 20px;
+    display: inline-block;
+
+    vertical-align: top;
+  }
+}
+
+.catalog-page__filter-title {
+  margin-top: 0;
+}
+
+.catalog-page__catalog {
+  width: 100%;
+  min-height: 340px;
+  margin-left: 200px;
+}
+
+.catalog-page__sort.catalog-page__sort--nojs {
+  display: none;
+}
+
+.catalog-page__sort {
+  font-size: 0;
+  text-align: right;
+}
+
+.catalog-page__sort-title {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  display: inline-block;
+
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.catalog-page__sort-arrow {
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+
+  opacity: 0.2;
+
+  &--up {
+    margin-right: 5px;
+
+    transform: rotate(180deg);
+  }
+
+  &--down {
+    margin-right: 15px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.catalog-page__sort-arrow--active {
+    opacity: 0.7;
+  }
+}
+
+.catalog-page__list {
+
+  & input[type="radio"] {
+    display: none;
+  }
+
+  &.catalog-page__list--nojs input[type="radio"]:checked + .item__radio-custom {
+    display: block;
+    margin-top: 15px;
+  }
+
+  @media @tablet-widths {
+
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.catalog-page__list--nojs .item__button {
+  display: none;
+}
+
+.catalog-page__filter-consist {
+
+  & label {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 5px;
+
+    cursor: pointer;
+  }
+
+  & input[type="checkbox"] {
+    display: none;
+  }
+}
+
+.catalog-page__filter-consist__checkbox-custom {
+  position: relative;
+  display: block;
+  width: 17px;
+  height: 17px;
+  order:2;
+
+  background-color: @input-bg;
+  border-radius: 3px;
+}
+
+.catalog-page__filter-consist label:hover .catalog-page__filter-consist__checkbox-custom {
+  background-color: #f2e4d9;
+
+}
+
+.catalog-page__filter-consist input[type="checkbox"]:checked + .catalog-page__filter-consist__checkbox-custom::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  top: -2px;
+  left: 5px;
+
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+
+  transform: rotate(45deg);
+}

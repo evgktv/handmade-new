@@ -1,0 +1,158 @@
+.header {
+  position: relative;
+  width: 100%;
+
+  background-image: url("../img/welkome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 20%;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.header__main {
+  height: 100vh;
+}
+
+.header__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: inherit;
+
+  background-color: rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+.header__intro {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+
+  transform: translate(0, -50%);
+}
+
+.header__intro-txt {
+  margin: 0;
+
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+
+  font-style: italic;
+
+  @media @tablet-widths {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  &--prof {
+    margin: 20px 0;
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 800;
+    font-style: normal;
+
+    @media @tablet-widths {
+      font-size: 52px;
+      line-height: 66px;
+      letter-spacing: 5px;
+    }
+
+    @media @desktop-widths {
+      font-size: 64px;
+      line-height: 80px;
+    }
+  }
+}
+
+.header__scroll {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  left: 50%;
+  bottom: 7%;
+  margin-left: -24px;
+
+  text-align: center;
+
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  z-index: 20;
+
+  outline: none;
+
+  &:hover {
+    background-color: rgba(255,255,255,0.3);
+    transition-duration: 0.7s;
+  }
+}
+
+.header__scroll-down {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: -6px;
+
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+
+    transform: rotate(45deg);
+    z-index: 30;
+
+
+    animation-name: scroll-drop;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+}
+
+@keyframes scroll-drop {
+  0% {
+    top: 12px;
+    opacity: 0;
+  }
+
+  30% {
+    top: 22px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 39px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes scroll-drop {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 27px;
+    opacity: 0;
+  }
+}
