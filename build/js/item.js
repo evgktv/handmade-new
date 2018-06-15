@@ -33,10 +33,10 @@
 
         previewImage.onload = function () {
             clearTimeout(imageLoadTimeout);
-            this.element.querySelector('.item__img').src = '/' + this._data.preview;
+            this.element.querySelector('.item__img').src = this._data.preview;
         }.bind(this);
 
-        previewImage.src = '/' + this._data.preview;
+        previewImage.src = this._data.preview;
     };
 
     Item.prototype.showPopup = function () {

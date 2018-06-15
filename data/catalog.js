@@ -6,7 +6,7 @@ var catalog = [
         "size": 40,
         "filter": ["из конфет"],
         "category":  ["kat1", "kat2"],
-        "preview": "img/catalog/item/tammnk.jpg"
+        "preview": "img/catalog/item/tank.jpg"
     },
 
     {
